@@ -1,6 +1,6 @@
 package ucb.guizao;
 
-public class Violao extends InstumentoMusical{
+public class Violao extends InstrumentoMusical {
     private int numeroDeCordas;
     public Violao(String material, String nome, int numeroDeCordas) {
         super(material, nome);
@@ -15,9 +15,12 @@ public class Violao extends InstumentoMusical{
 
     @Override
     public void tocar() {
-        System.out.println("Tocando todas as "+ numeroDeCordas +" cordas do " + nome + "...");
+        System.out.println("Tocando com zelo todas as "+ numeroDeCordas +" cordas do " + nome + "...");
     }
 
     @Override
-    public void mostrarInformacoes
+    public void mostrarInformacoes(){
+        super.mostrarInformacoes();
+        System.out.println("Numero de cordas: " + numeroDeCordas);
+    }
 }

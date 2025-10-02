@@ -1,6 +1,6 @@
 package ucb.guizao;
 
-public class Piano extends InstumentoMusical{
+public class Piano extends InstrumentoMusical {
     public Piano(String material, String nome) {
         super(material, nome);
     }

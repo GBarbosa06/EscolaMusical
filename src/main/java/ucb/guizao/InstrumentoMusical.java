@@ -1,10 +1,10 @@
 package ucb.guizao;
 
-public abstract class InstumentoMusical {
+public abstract class InstrumentoMusical {
     protected String nome;
     protected String material;
 
-    public InstumentoMusical(String material, String nome) {
+    public InstrumentoMusical(String material, String nome) {
         this.material = material;
         this.nome = nome;
     }
@@ -15,7 +15,7 @@ public abstract class InstumentoMusical {
         System.out.println("Afinando o " + nome);
     }
 
-    public void mostrarInfrmacoes() {
-        System.out.printf("Instrumento: %s\n Material: %s\n", nome, material);
+    public void mostrarInformacoes() {
+        System.out.printf("Instrumento: %s\nMaterial: %s\n", nome, material);
     }
 }
